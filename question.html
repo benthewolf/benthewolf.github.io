@@ -20,6 +20,57 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   </head>
   <style>
+    /* Dick style starts here */
+    .base {
+      border: 8px solid #0e7490;
+      width: 35px;
+      height: 100px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    .neck {
+      border: 9px solid #0e7490;
+      border-left: none;
+      height: 70px;
+      width: 100%;
+      border-top-right-radius: 35px;
+      border-bottom-right-radius: 35px;
+      background-repeat: no-repeat;
+      background-image: url("/images/question/Screenshot\ 2024-06-29\ 034257.png");
+      background-size: 0% 100%;
+      animation: progressblu 4.8s linear forwards;
+      animation-play-state: paused;
+    }
+
+    @keyframes progressblu {
+      0% {
+        background-size: 0% 100%;
+      }
+      100% {
+        background-size: 100% 100%;
+      }
+    }
+
+    .brkn-lines {
+      width: 1%;
+      height: 2px;
+      border: 1px solid #f4f4f5;
+    }
+
+    .percentext {
+      top: 50%;
+      left: 20%;
+      transform: translate(-20%, -50%);
+      color: #0e7490;
+    }
+
+    #count {
+      color: #0e7490;
+    }
+
     .flex-even {
       flex: 1;
     }
@@ -322,25 +373,25 @@
             </p>
             <button
               type="button"
-              class="w-100 p-3 text-start mb-3 fw-bold nextqa"
+              class="w-100 p-3 text-start mb-3 fw-bold nextqa" onclick="countUp(); toggleAnimation();"
             >
               1 to 2 inches
             </button>
             <button
               type="button"
-              class="w-100 p-3 text-start mb-3 fw-bold nextqa"
+              class="w-100 p-3 text-start mb-3 fw-bold nextqa" onclick="countUp(); toggleAnimation();"
             >
               2 to 3 inches
             </button>
             <button
               type="button"
-              class="w-100 p-3 text-start mb-3 fw-bold nextqa"
+              class="w-100 p-3 text-start mb-3 fw-bold nextqa" onclick="countUp(); toggleAnimation();"
             >
               3 to 4 inches
             </button>
             <button
               type="button"
-              class="w-100 p-3 text-start mb-3 fw-bold nextqa"
+              class="w-100 p-3 text-start mb-3 fw-bold nextqa" onclick="countUp(); toggleAnimation();"
             >
               4 or more inches
             </button>
@@ -358,10 +409,59 @@
 
         <div class="flex-even mx-md-5 pt-5 mt-5">
           <div class="text-center">
-            <img
-              src="/images/question/condom-loading.gif"
-              class="img-fluid mb-5 w-100"
-            />
+            <div class="mb-5 w-100">
+              <div class="d-flex align-items-center position-relative">
+                <!-- dick starts here -->
+                <div class="base"></div>
+                <div class="neck d-flex align-items-center gap-1">
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                  <div class="brkn-lines"></div>
+                </div>
+                <p
+                  class="position-absolute percentext fw-bolder fs-3"
+                  id="count"
+                >
+                  0%
+                </p>
+              </div>
+            </div>
           </div>
           <div class="progress mb-3 d-none">
             <div
@@ -492,7 +592,7 @@
         }, 20); // ADJUST THE PROGRESS BAR SPEED HERE
       }
 
-      function showNextSection() {
+      setTimeout (function showNextSection() {
         if (currentIndex + 1 < sections.length) {
           sections[currentIndex].classList.remove("active");
           currentIndex++;
@@ -508,7 +608,7 @@
         if (currentIndex >= 6) {
           setTimeout.window.location.href = "order.html"(1000);
         }
-      }
+      }, 5000);
 
       const nextButtons = document.querySelectorAll(".nextqa");
       nextButtons.forEach((button) => {
@@ -526,8 +626,35 @@
       // Delay for 2 seconds (2000 milliseconds)
       setTimeout(function () {
         // Redirect to 'order.html' after the delay
-        window.location.href = "order.html";
+        window.location.href = "https://ultramanix.com/ultramanix-v3/order";
       }, 3000); // 2000 milliseconds = 2 seconds
+    }
+
+    function countUp() {
+      let currentPercentage = 0;
+      const totalDuration = 4000; // Total duration in milliseconds (4 seconds)
+      const increment = 1; // Increment percentage per interval
+
+      const intervalTime = totalDuration / 100; // Interval time for each percentage increment
+
+      const interval = setInterval(() => {
+        if (currentPercentage >= 100) {
+          clearInterval(interval); // Stop the interval when 100% is reached
+        } else {
+          currentPercentage += increment;
+          document.getElementById(
+            "count"
+          ).textContent = `${currentPercentage}%`;
+        }
+      }, intervalTime);
+    }
+
+    // Call the function to start counting
+    // countUp();
+
+    const neck = document.querySelector('.neck');
+    function toggleAnimation(){
+      neck.style.animationPlayState='running';
     }
   </script>
 </html>
