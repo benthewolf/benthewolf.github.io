@@ -592,7 +592,7 @@
         }, 20); // ADJUST THE PROGRESS BAR SPEED HERE
       }
 
-      setTimeout (function showNextSection() {
+      function showNextSection() {
         if (currentIndex + 1 < sections.length) {
           sections[currentIndex].classList.remove("active");
           currentIndex++;
@@ -604,11 +604,7 @@
             startProgressBar(progressBar, showNextSection);
           }
         }
-
-        if (currentIndex >= 6) {
-          setTimeout.window.location.href = "order.html"(1000);
-        }
-      }, 5000);
+      }
 
       const nextButtons = document.querySelectorAll(".nextqa");
       nextButtons.forEach((button) => {
