@@ -120,6 +120,12 @@
   font-style: normal;
 }
 
+/* FONTS END */
+
+.header{
+  border-bottom: 2px solid #06B6D4;
+}
+
 body {
   font-family: "Oswald", sans-serif;
 }
