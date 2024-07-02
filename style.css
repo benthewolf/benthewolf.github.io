@@ -281,6 +281,7 @@ img.hidden {
 .blue-border {
   border: 2px solid #0e7490;
   padding: 0px;
+  width: 100%;
 }
 
 .hero-hr {
@@ -369,8 +370,8 @@ img.hidden {
   border: none;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  width: 100%;
+  text-decoration: none;
 }
 
 .continue-btn:hover,
@@ -389,7 +390,7 @@ img.hidden {
 
 li {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 li a {
@@ -397,11 +398,13 @@ li a {
   color: #fafafa;
   text-align: center;
   text-decoration: none;
+  font-size: 10px;
 }
 
 ul li:not(:last-child)::after {
   content: "/"; /* Add slash divider after each li except the last one */
   margin-left: 10px; /* Adjust spacing between slash and next item */
+  font-size: 10px;
 }
 
 .paused {
@@ -416,6 +419,10 @@ ul li:not(:last-child)::after {
 
 .swiper {
   height: 75vh;
+}
+
+.last-sec {
+  width: 100%;
 }
 
 .alpha-label-btn:hover {
@@ -537,6 +544,10 @@ ul li:not(:last-child)::after {
   background-image: linear-gradient(#0e7490, #44403c);
 }
 
+.m-w-70{
+  width: 70%;
+}
+
 /* responsiveness */
 
 @media screen and (max-width: 375px) {
@@ -574,6 +585,10 @@ ul li:not(:last-child)::after {
 
   .tile {
     width: 100%;
+  }
+
+  .sm-w-50{
+    width: 50%;
   }
 }
 
@@ -742,6 +757,10 @@ ul li:not(:last-child)::after {
     font-size: 8rem; /* 128px */
     line-height: 1;
   }
+
+  .md-w-50{
+    width: 50%;
+  }
 }
 
 /* LG */
@@ -828,11 +847,18 @@ ul li:not(:last-child)::after {
     font-size: 8rem; /* 128px */
     line-height: 1;
   }
+
+  .lg-w-50{
+    width: 50%;
+  }
 }
 
 /* XL */
 @media screen and (min-width: 1200px) {
   .resp {
     border: 2px solid yellow;
+  }
+  .xl-w-50{
+    width: 50%;
   }
 }
