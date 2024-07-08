@@ -1,0 +1,64 @@
+/* google fonts */
+
+/* google fonts end*/
+
+/* font sizes */
+
+/* font sizes end*/
+
+/* Coolors */
+
+/* Coolors end*/
+
+
+/* Bg coolors */
+
+/* Bg coolors end*/
+
+/* font colors */
+
+/* font colors end*/
+
+/* width */
+
+/* width end */
+
+/* margins */
+
+/* margins end*/
+
+/* paddings */
+
+/* paddings end*/
+
+/* elements */
+.hero-header{
+    border-bottom: 3px solid #0e7490;
+    height: 10vh;
+}
+
+.header-logo{
+    width: 50%;
+}
+/* elements end*/
+
+/* breakpoints */
+
+/* breakpoints end*/
+
+@media (width > 991px){
+    .header-logo{
+        width: 40%;
+        border: 2px solid pink;
+    }
+}
+
+@media (width > 1199px){
+    .header-logo{
+        width: 30%;
+        border: 2px solid pink;
+    }
+}
+
+
+

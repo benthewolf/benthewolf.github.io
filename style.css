@@ -130,6 +130,11 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+.hero-img{
+  object-fit: contain;
+  width: 100%;
+}
+
 .journey-btn {
   background-color: #06B6D4;
   border: none;
@@ -280,8 +285,7 @@ img.hidden {
 
 .blue-border {
   border: 2px solid #0e7490;
-  padding: 0px;
-  width: 100%;
+  
 }
 
 .hero-hr {
@@ -630,7 +634,7 @@ ul li:not(:last-child)::after {
   }
 
   .hero-section {
-    height: 80vh;
+    height: 90vh;
   }
 
   .journey-btn {
@@ -854,7 +858,7 @@ ul li:not(:last-child)::after {
 }
 
 /* XL */
-@media screen and (min-width: 1200px) {
+@media screen and (width > 800px) {
   .resp {
     border: 2px solid yellow;
   }
