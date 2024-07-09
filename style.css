@@ -286,7 +286,7 @@ img.hidden {
 
 .blue-border {
   border: 2px solid #0e7490;
-  
+  width: auto;
 }
 
 .hero-hr {
@@ -583,6 +583,17 @@ ul li:not(:last-child)::after {
     width: 100%;
     aspect-ratio: 1/1;
   }
+
+  .hero-img{
+    width: 100%;
+    transform: translate( -10%, 0%);
+    object-fit: contain;
+  }
+
+  .blue-border {
+    border: 2px solid #0e7490;
+    width: 100%;
+  }
 }
 
 /* SM */
@@ -609,6 +620,11 @@ ul li:not(:last-child)::after {
 @media screen and (min-width: 768px) {
   .resp {
     border: 2px solid blue;
+  }
+
+  .blue-border {
+    border: 2px solid #0e7490;
+    width: 80%;
   }
 
   #eggplant{
