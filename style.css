@@ -343,6 +343,7 @@ img.hidden {
 
 #eggplant{
   width: auto;
+  aspect-ratio: 1/1;
 }
 
 .tile-1 {
@@ -424,7 +425,12 @@ ul li:not(:last-child)::after {
 }
 
 .swiper {
-  height: 75vh;
+  height: 70vh;
+}
+
+.swiper-slide{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .last-sec {
@@ -566,7 +572,6 @@ ul li:not(:last-child)::after {
 
   #eggplant{
     width: 95%;
-    border: 2px solid red;
   }
 }
 
