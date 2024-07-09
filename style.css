@@ -369,6 +369,7 @@ img.hidden {
   height: 1rem;
 }
 
+
 .continue-btn {
   background-color: #fafafa;
   color: #0e7490;
@@ -815,7 +816,7 @@ ul li:not(:last-child)::after {
   }
 
   .last-sec {
-    width: 70%;
+    width: 50%;
   }
 
   .lg-text-xs {
@@ -883,6 +884,16 @@ ul li:not(:last-child)::after {
 
   .lg-w-50{
     width: 50%;
+  }
+
+  .continue-btn {
+    background-color: #fafafa;
+    color: #0e7490;
+    border: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 20%;
+    text-decoration: none;
   }
 }
 
