@@ -285,7 +285,7 @@ img.hidden {
 }
 
 .blue-border {
-  border: 2px solid #0e7490;
+  border: 1px solid #0e7490;
   width: auto;
 }
 
@@ -387,6 +387,7 @@ img.hidden {
 .journey-btn:hover {
   background-color: #1c1917;
   color: #fafafa;
+  transition: 0.4s ease-in-out;
 }
 
 .faqs {
@@ -599,7 +600,7 @@ ul li:not(:last-child)::after {
   }
 
   .blue-border {
-    border: 2px solid #0e7490;
+    border: 1px solid #0e7490;
     width: 100%;
   }
 }
@@ -631,7 +632,7 @@ ul li:not(:last-child)::after {
   }
 
   .blue-border {
-    border: 2px solid #0e7490;
+    border: 1px solid #0e7490;
     width: 80%;
   }
 
