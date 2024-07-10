@@ -133,7 +133,7 @@ body {
 .hero-img{
   width: 100%;
   transform: translate( -10%, -10%);
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .journey-btn {
@@ -290,7 +290,9 @@ img.hidden {
 }
 
 .hero-hr {
-  border: 2px solid black;
+  height: 1px !important;
+  color: black;
+  background-color: black;
 }
 
 .pt-10 {
@@ -893,6 +895,14 @@ ul li:not(:last-child)::after {
 
   .lg-w-60{
     width: 60%;
+  }
+
+  .pb-lg-10 {
+    padding-bottom: 6rem;
+  }
+
+  .mt-lg-10{
+    margin-top: 8rem !important;
   }
 
   .continue-btn {
